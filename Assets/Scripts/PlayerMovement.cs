@@ -18,6 +18,8 @@ public class PlayerMove : MonoBehaviour
     CharacterController ch;
     Quaternion camquat;
 
+    static public bool dialogue = false;
+
     private void Start()
     {
         ch = GetComponent<CharacterController>();
@@ -39,5 +41,6 @@ public class PlayerMove : MonoBehaviour
         float camrot = -Input.GetAxis("Mouse Y") * sens * Time.deltaTime;
 
         CharacterCamera.Rotate(camrot, 0, 0);
+
     }
 }

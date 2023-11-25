@@ -4,7 +4,7 @@ public class AN_Viewer : MonoBehaviour
 {
     [TextArea]
     public string Description = "use it on empty obj with Camera as children. WASDQE - walk, RT - rotation, Shift - run";
-    public float Walk = 1f, Run = 6f, RotateSpeed = 10f;
+    public float Walk = 1f, Run = 6f, RotateSpeed = 50f;
     public int Sensitivity = 100;
     public bool HideCursor = false;
 
